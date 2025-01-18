@@ -1,7 +1,83 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: rgb(223, 222, 222);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.3fr 2fr;
+  grid-template-rows: 11rem 1fr;
+}
+
+/* navbar styles */
+.nav {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: cornflowerblue;
+}
+
+
+
+/* header styles */
+.header {
+  background-color: white;
+  
+}
+
+.head-row-one, .head-row-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 1.5rem 5rem;
+
+}
+
+.header .head-row-one input {
+    border-radius: 15px;
+    background-color: hsl(0, 3%, 85%);
+    width: 45rem;
+    height: 2rem;
+    border-color: aliceblue;
+}
+
+.head-row-two img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.header button {
+    border-radius: 15px;
+    background-color: hsl(210, 97%, 58%);
+    color: white;
+    padding: 10px 15px;
+    border-color: hsl(210, 97%, 54%);
+    margin-left: 10px;
+}
+
+.header button:hover {
+    background-color: hsl(210, 97%, 48%);
+}
+
+/* main styles */
+.main-body {
+}
+
+img {
+  border-radius: 48%;
 }
